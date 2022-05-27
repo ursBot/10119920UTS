@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+TANGGAL  : 20 MEI 2022
+NAMA     : UMAR SAID ADI PRANOTO
+NIM      : 10119920
+KELAS    : IF10
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img_background"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/homeTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen100"
+            android:layout_height="@dimen/dimen100"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/profile_rounded">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:scaleX="1"
+                android:scaleY="1.3"
+                android:src="@drawable/img_profile_umar"
+                android:contentDescription="@string/my_name" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen20"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginEnd="@dimen/dimen20"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/my_name"
+            android:textAlignment="center"
+            android:textColor="@color/bottom_nav_bar"
+            android:textSize="@dimen/font30" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen20"
+            android:layout_marginEnd="@dimen/dimen20"
+            android:fontFamily="@font/roboto_regular"
+            android:justificationMode="inter_word"
+            android:letterSpacing="0.005"
+            android:padding="@dimen/dimen10"
+            android:text="@string/my_desc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font15"
+            tools:targetApi="o" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen20"
+        android:padding="@dimen/dimen10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTop">
+
+        <TextView
+            style="@style/titleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/interest"
+            android:textFontWeight="800"
+            android:textSize="@dimen/font20"
+            android:background="@color/bottom_nav_bar"
+            tools:targetApi="p" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- card 1 -->
+                <androidx.cardview.widget.CardView
+                    style="@style/card_interest"
+                    android:layout_width="@dimen/dimen130"
+                    android:layout_height="@dimen/dimen180"
+                    android:layout_marginStart="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen10"
+                    android:layout_marginEnd="@dimen/dimen10"
+                    android:layout_marginBottom="@dimen/dimen15"
+                    app:cardCornerRadius="@dimen/dimen20"
+                    app:cardElevation="@dimen/dimen10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/dimen100"
+                            android:layout_height="@dimen/dimen110"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen5"
+                            android:layout_marginBottom="@dimen/dimen10"
+                            android:src="@drawable/ic_activity_pingpong" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen0"
+                            android:fontFamily="@font/alice_regular"
+                            android:letterSpacing="0.05"
+                            android:padding="@dimen/dimen5"
+                            android:text="@string/ping_pong"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font11"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen1"
+                            android:fontFamily="@font/alice_regular"
+                            android:letterSpacing="0.05"
+                            android:text="@string/hobby"
+                            android:textAlignment="center"
+                            android:textColor="@color/teal_200"
+                            android:textSize="@dimen/font15"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- card 2 -->
+                <androidx.cardview.widget.CardView
+                    style="@style/card_interest"
+                    android:layout_width="@dimen/dimen130"
+                    android:layout_height="@dimen/dimen180"
+                    android:layout_marginStart="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen10"
+                    android:layout_marginEnd="@dimen/dimen10"
+                    android:layout_marginBottom="@dimen/dimen15"
+                    app:cardCornerRadius="@dimen/dimen20"
+                    app:cardElevation="@dimen/dimen10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/dimen100"
+                            android:layout_height="@dimen/dimen110"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen5"
+                            android:layout_marginBottom="@dimen/dimen10"
+                            android:src="@drawable/ic_activity_cat" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen0"
+                            android:fontFamily="@font/alice_regular"
+                            android:letterSpacing="0.05"
+                            android:padding="@dimen/dimen5"
+                            android:text="@string/cat"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font11"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen1"
+                            android:fontFamily="@font/alice_regular"
+                            android:letterSpacing="0.05"
+                            android:text="@string/interest"
+                            android:textAlignment="center"
+                            android:textColor="@color/teal_200"
+                            android:textSize="@dimen/font15"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- card 3 -->
+                <androidx.cardview.widget.CardView
+                    style="@style/card_interest"
+                    android:layout_width="@dimen/dimen130"
+                    android:layout_height="@dimen/dimen180"
+                    android:layout_marginStart="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen10"
+                    android:layout_marginEnd="@dimen/dimen10"
+                    android:layout_marginBottom="@dimen/dimen15"
+                    app:cardCornerRadius="@dimen/dimen20"
+                    app:cardElevation="@dimen/dimen10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/dimen100"
+                            android:layout_height="@dimen/dimen110"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen5"
+                            android:layout_marginBottom="@dimen/dimen10"
+                            android:src="@drawable/ic_activity_coffee" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen0"
+                            android:fontFamily="@font/alice_regular"
+                            android:letterSpacing="0.05"
+                            android:padding="@dimen/dimen5"
+                            android:text="@string/coffee"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font11"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen1"
+                            android:fontFamily="@font/alice_regular"
+                            android:letterSpacing="0.05"
+                            android:text="@string/interest"
+                            android:textAlignment="center"
+                            android:textColor="@color/teal_200"
+                            android:textSize="@dimen/font15"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- card 4 -->
+                <androidx.cardview.widget.CardView
+                    style="@style/card_interest"
+                    android:layout_width="@dimen/dimen130"
+                    android:layout_height="@dimen/dimen180"
+                    android:layout_marginStart="@dimen/dimen10"
+                    android:layout_marginTop="@dimen/dimen10"
+                    android:layout_marginEnd="@dimen/dimen10"
+                    android:layout_marginBottom="@dimen/dimen15"
+                    app:cardCornerRadius="@dimen/dimen20"
+                    app:cardElevation="@dimen/dimen10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/dimen100"
+                            android:layout_height="@dimen/dimen110"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen5"
+                            android:layout_marginBottom="@dimen/dimen10"
+                            android:src="@drawable/ic_activity_moon" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen0"
+                            android:fontFamily="@font/alice_regular"
+                            android:letterSpacing="0.05"
+                            android:padding="@dimen/dimen5"
+                            android:text="@string/moon"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font11"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen1"
+                            android:fontFamily="@font/alice_regular"
+                            android:letterSpacing="0.05"
+                            android:text="@string/interest"
+                            android:textAlignment="center"
+                            android:textColor="@color/teal_200"
+                            android:textSize="@dimen/font15"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

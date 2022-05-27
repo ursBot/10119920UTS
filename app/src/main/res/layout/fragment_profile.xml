@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+TANGGAL  : 20 MEI 2022
+NAMA     : UMAR SAID ADI PRANOTO
+NIM      : 10119920
+KELAS    : IF10
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context=".ProfileFragment">
+
+    <!-- profile top -->
+    <LinearLayout
+        android:id="@+id/profileTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/titleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen20"
+            android:text="@string/my_profile"
+            android:textFontWeight="800"
+            android:textSize="@dimen/font20"
+            tools:targetApi="p" />
+
+    </LinearLayout>
+
+    <!-- card profile -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bottom_nav_bar"
+        app:cardCornerRadius="@dimen/dimen20"
+        app:cardElevation="@dimen/dimen10"
+        android:layout_marginTop="@dimen/min_dimen130"
+        android:layout_marginStart="@dimen/dimen20"
+        android:layout_marginEnd="@dimen/dimen20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen100"
+                android:layout_height="@dimen/dimen100"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen30"
+                android:layout_marginBottom="@dimen/dimen10"
+                android:background="@drawable/profile_rounded">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/my_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_profile_umar" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/titleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen10"
+                android:paddingBottom="@dimen/dimen20"
+                android:text="@string/my_name"
+                android:textFontWeight="800"
+                tools:targetApi="p" />
+
+            <TextView
+                style="@style/profile_bot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/dimen10"
+                android:paddingBottom="@dimen/dimen20"
+                android:text="@string/profile_desc"
+                android:textSize="@dimen/font15"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- whatsapp -->
+    <RelativeLayout
+        android:id="@+id/profile_Whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen45"
+        android:layout_marginTop="@dimen/dimen30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/dimen20"
+            android:layout_toStartOf="@+id/text_whatsapp"
+            android:background="@drawable/profile_icon_rounded"
+            android:backgroundTint="@color/bottom_nav_bar">
+
+            <ImageView
+                android:id="@+id/icon_whatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/whatsapp"
+                android:src="@drawable/ic_whatsapp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_whatsapp"
+            style="@style/profile_bot"
+            android:layout_width="@dimen/dimen270"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="@string/whatsapp"
+            android:textSize="@dimen/font15" />
+
+    </RelativeLayout>
+
+    <!-- instagram -->
+    <RelativeLayout
+        android:id="@+id/profile_instagram"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen45"
+        android:layout_marginTop="@dimen/dimen18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Whatsapp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen0"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dimen20"
+            android:layout_toStartOf="@+id/text_instagram"
+            android:backgroundTint="@color/bottom_nav_bar"
+            android:background="@drawable/profile_icon_rounded">
+
+            <ImageView
+                android:id="@+id/icon_instagram"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/instagram"
+                android:src="@drawable/ic_instagram" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_instagram"
+            style="@style/profile_bot"
+            android:layout_width="@dimen/dimen270"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="@string/instagram"
+            android:textSize="@dimen/font15" />
+
+    </RelativeLayout>
+
+    <!-- email -->
+    <RelativeLayout
+        android:id="@+id/profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen45"
+        android:layout_marginTop="@dimen/dimen18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_instagram">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen0"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/bottom_nav_bar"
+            android:background="@drawable/profile_icon_rounded"
+            android:layout_marginStart="@dimen/dimen20"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/text_email">
+
+            <ImageView
+                android:id="@+id/icon_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/email"
+                android:src="@drawable/ic_email" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_email"
+            style="@style/profile_bot"
+            android:layout_width="@dimen/dimen270"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="@string/email"
+            android:textSize="@dimen/font15" />
+
+    </RelativeLayout>
+
+        <!-- about apps -->
+    <RelativeLayout
+        android:id="@+id/profile_about_apps"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen45"
+        android:layout_marginTop="@dimen/dimen18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_email">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen0"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/bottom_nav_bar"
+            android:background="@drawable/profile_icon_rounded"
+            android:layout_marginStart="@dimen/dimen20"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/text_about_apps">
+
+            <ImageView
+                android:id="@+id/icon_about_apps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/about_apps"
+                android:src="@drawable/ic_about" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_about_apps"
+            style="@style/profile_bot"
+            android:layout_width="@dimen/dimen270"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="@string/about_apps"
+            android:textSize="@dimen/font15" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

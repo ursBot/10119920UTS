@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Apps -->
+    <string name="app_name">Umar Apps</string>
+
+    <!-- Bottom Menu -->
+    <string name="home">Home</string>
+    <string name="activity">Activity</string>
+    <string name="gallery">Gallery</string>
+    <string name="music">Music</string>
+    <string name="profile">Profile</string>
+
+    <!-- Home Fragment Profile -->
+    <string name="my_name">Umar Said Adi Pranoto</string>
+    <string name="my_desc">I was born in Surakarta in 1999, after graduating from high school in 2017, I went to Bandung for work, until 2019 I continue my education and now I am studying at UNIKOM Bandung.</string>
+
+    <!-- Home Fragment Interest-->
+    <string name="hobby">Hobby</string>
+    <string name="interest">Interest</string>
+
+    <string name="ping_pong">Pingpong</string>
+    <string name="cat">Cat</string>
+    <string name="coffee">Coffee</string>
+    <string name="moon">Moon</string>
+
+    <!-- Activity Fragment (DAILY) -->
+    <string name="daily_activity">My Daily Activity</string>
+
+    <string name="working">Working</string>
+    <string name="working_desc">Go to the Office every day to work</string>
+
+    <string name="pingpong">Pingpong Match</string>
+    <string name="pingpong_Desc">After working, in the afternoon always playing pingpong with coworkers</string>
+
+    <string name="study">Study</string>
+    <string name="study_desc">Study campus after Maghrib</string>
+
+    <string name="watching">Watch entertainment</string>
+    <string name="watching_desc">Always watch entertainment when have free time (movie, anime, youtube)</string>
+
+    <string name="gaming">Gaming</string>
+    <string name="gaming_desc">Playing game when have free time</string>
+
+    <!-- Activity Fragment (FRIEND) -->
+    <string name="friends_list">My Friends List</string>
+
+    <string name="zoro">RORONOA ZORO</string>
+    <string name="saitama">SAITAMA</string>
+    <string name="levi">LEVI ACKERMAN</string>
+    <string name="killua">KILLUA ZOLDYCK</string>
+    <string name="patrick">PATRICK STAR</string>
+
+    <!-- Gallery Fragment -->
+    <string name="my_gallery">My Gallery</string>
+
+    <string name="image_gallery_1">image gallery 1</string>
+    <string name="image_gallery_2">image gallery 2</string>
+    <string name="image_gallery_3">image gallery 3</string>
+    <string name="image_gallery_4">image gallery 4</string>
+
+    <!-- Music Fragment -->
+    <string name="my_music">My Music</string>
+
+    <string name="music1">Iam yours x Death bed - Jason Mraz and Powfu</string>
+    <string name="music2">At My Worst - Pink Sweat$ - Vocal and acoustic guitar cover Ft. Renee Foy</string>
+    <string name="music3">DENNY CAKNAN FT. NDARBOY GENK - OJO NANGIS</string>
+    <string name="music4">Idgitaf - Takut</string>
+    <string name="music5">SING-OFF TIKTOK SONGS PART V (Build A B*tch, Everything Sucks, Kiss Me More) vs Mirriam Eka</string>
+
+    <!-- Profile Fragment -->
+    <string name="my_profile">My Profile</string>
+    <string name="profile_desc">Accounting | 22 Years Old</string>
+
+    <string name="whatsapp">WhatsApp</string>
+    <string name="instagram">Instagram</string>
+    <string name="email">Email</string>
+    <string name="about_apps">About Apps</string>
+
+    <!-- Profile Fragment About Apps Alert -->
+    <string name="dialog_type">About Apps</string>
+    <string name="dialog_title">Umar Apps</string>
+    <string name="dialog_desc">v1.0</string>
+    <string name="ok">OK</string>
+
+</resources>

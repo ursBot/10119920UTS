@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+TANGGAL  : 20 MEI 2022
+NAMA     : UMAR SAID ADI PRANOTO
+NIM      : 10119920
+KELAS    : IF10
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen60"
+        android:background="@drawable/bg_rounded"
+        android:backgroundTint="@color/bottom_nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/titleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_gallery"
+            android:textSize="@dimen/font20" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="@dimen/dimen0"
+        android:layout_height="@dimen/dimen500"
+        android:padding="@dimen/dimen20"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <!-- image gallery 1 -->
+        <androidx.cardview.widget.CardView
+            style="@style/card_gallery"
+            android:layout_width="@dimen/dimen10"
+            android:layout_height="@dimen/dimen10"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/dimen10"
+            app:cardCornerRadius="@dimen/dimen15"
+            app:cardElevation="@dimen/dimen0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/image_gallery_1"
+                    android:src="@drawable/img_gallery_1" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- image gallery 2 -->
+        <androidx.cardview.widget.CardView
+            style="@style/card_gallery"
+            android:layout_width="@dimen/dimen10"
+            android:layout_height="@dimen/dimen10"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/dimen10"
+            app:cardCornerRadius="@dimen/dimen15"
+            app:cardElevation="@dimen/dimen0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/img_gallery_2"
+                    android:contentDescription="@string/image_gallery_2" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- image gallery 3 -->
+        <androidx.cardview.widget.CardView
+            style="@style/card_gallery"
+            android:layout_width="@dimen/dimen10"
+            android:layout_height="@dimen/dimen10"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/dimen10"
+            app:cardCornerRadius="@dimen/dimen15"
+            app:cardElevation="@dimen/dimen0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/image_gallery_3"
+                    android:src="@drawable/img_gallery_3" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- image gallery 4 -->
+        <androidx.cardview.widget.CardView
+            style="@style/card_gallery"
+            android:layout_width="@dimen/dimen0"
+            android:layout_height="@dimen/dimen0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/dimen10"
+            app:cardCornerRadius="@dimen/dimen15"
+            app:cardElevation="@dimen/dimen0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/img_gallery_4"
+                    android:contentDescription="@string/image_gallery_4" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

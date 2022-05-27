@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+TANGGAL  : 20 MEI 2022
+NAMA     : UMAR SAID ADI PRANOTO
+NIM      : 10119920
+KELAS    : IF10
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/img_background"
+    android:orientation="vertical">
+
+    <!-- music top -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen60"
+        android:backgroundTint="@color/bottom_nav_bar"
+        android:background="@drawable/bg_rounded">
+
+        <TextView
+            style="@style/titleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/bottom_nav_bar"
+            android:text="@string/my_music"
+            android:textSize="@dimen/font20" />
+
+    </RelativeLayout>
+
+    <!-- music content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen30"
+            android:paddingBottom="@dimen/dimen60"
+            android:paddingStart="@dimen/dimen50"
+            android:paddingEnd="@dimen/dimen50">
+
+            <!-- song 1 (Westlife - Flying Without Wings) -->
+            <TextView
+                style="@style/titleSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/music1"
+                android:layout_marginBottom="@dimen/dimen10"
+                android:textSize="@dimen/font12"
+                android:textFontWeight="800"
+                tools:targetApi="p" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen170"
+                app:cardCornerRadius="@dimen/dimen8"
+                app:cardElevation="@dimen/dimen5"
+                android:layout_marginBottom="@dimen/dimen20"
+                android:clickable="false">
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:videoId="RRlgbXUMKt8"
+                    app:autoPlay="false" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- song 2 (Westlife - Better Man)-->
+            <TextView
+                style="@style/titleSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/music2"
+                android:layout_marginTop="@dimen/dimen10"
+                android:layout_marginBottom="@dimen/dimen10"
+                android:textSize="@dimen/font12"
+                android:textFontWeight="800"
+                tools:targetApi="p" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen170"
+                app:cardCornerRadius="@dimen/dimen8"
+                app:cardElevation="@dimen/dimen5"
+                android:layout_marginBottom="@dimen/dimen20"
+                android:clickable="false">
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:videoId="i8fa3JIrgpY"
+                    app:autoPlay="false" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- song 3 (Westlife - My Love)-->
+            <TextView
+                style="@style/titleSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/music3"
+                android:layout_marginTop="@dimen/dimen10"
+                android:layout_marginBottom="@dimen/dimen10"
+                android:textSize="@dimen/font12"
+                android:textFontWeight="800"
+                tools:targetApi="p" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen170"
+                app:cardCornerRadius="@dimen/dimen8"
+                app:cardElevation="@dimen/dimen5"
+                android:layout_marginBottom="@dimen/dimen20"
+                android:clickable="false">
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:videoId="NoBzI8O34Nc"
+                    app:autoPlay="false" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- song 4 (Westlife - I Have a Dream)-->
+            <TextView
+                style="@style/titleSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/music4"
+                android:layout_marginTop="@dimen/dimen10"
+                android:layout_marginBottom="@dimen/dimen10"
+                android:textSize="@dimen/font12"
+                android:textFontWeight="800"
+                tools:targetApi="p" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen170"
+                app:cardCornerRadius="@dimen/dimen8"
+                app:cardElevation="@dimen/dimen5"
+                android:layout_marginBottom="@dimen/dimen20"
+                android:clickable="false">
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:videoId="5TUUg9mU_V0"
+                    app:autoPlay="false" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- song 5 -->
+            <TextView
+                style="@style/titleSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/music5"
+                android:layout_marginTop="@dimen/dimen10"
+                android:layout_marginBottom="@dimen/dimen10"
+                android:textSize="@dimen/font12"
+                android:textFontWeight="800"
+                tools:targetApi="p" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen170"
+                app:cardCornerRadius="@dimen/dimen8"
+                app:cardElevation="@dimen/dimen5"
+                android:layout_marginBottom="@dimen/dimen20"
+                android:clickable="false">
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/youtube_player_view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:videoId="2xhdt43QDCo"
+                    app:autoPlay="false" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
